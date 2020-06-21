@@ -10,6 +10,7 @@ Use a simple synthesis language to generate or process audio in your Unity games
 * Add an audio source to the game object
 
 The game object will now produce sound. You can edit the audio source to set the volume or use the Unity spatialisation functionality as you would normally be able to.
+
 If you want the game state to affect the sound processing, you can follow this general structure in an additional C# script:
 ```C#
 using System.Collections;
