@@ -9,7 +9,8 @@ Use a simple synthesis language to generate or process audio in your Unity games
 * Attach a textual Volsung program to the component
 * Add an audio source to the game object
 
-The game object will now produce sound. If you want the game state to affect the sound processing, you can follow this general structure in an additional C# script:
+The game object will now produce sound. You can edit the audio source to set the volume or use the Unity spatialisation functionality as you would normally be able to.
+If you want the game state to affect the sound processing, you can follow this general structure in an additional C# script:
 ```C#
 using System.Collections;
 using System.Collections.Generic;
@@ -40,6 +41,5 @@ position -> *100 -> Smooth~ 40
 ```
 
 We are reading the position parameter, which is available as a node because it was added in the editor UI. Then we scale it, smooth it (really just a lowpass filter), and use the value as the frequency of a sine wave which is sent to the audio source component.
-<br /> You can edit the audio source to set the volume or use the Unity spatialisation functionality as you would normally be able to.
 
 Unfortunately, Unity is terrible at dealing with textual assets. They cannot be created in the editor, and they must have the .txt extension. I recommend you copy-paste text assets that have already been imported and manually tell your editor to do the syntax highlighting.
