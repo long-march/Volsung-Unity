@@ -1,0 +1,3 @@
+[submodule "Volsung"]
+	path = Volsung
+	url = https://github.com/long-march/Volsung.git
