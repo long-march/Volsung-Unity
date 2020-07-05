@@ -44,4 +44,5 @@ position -> *100 -> Smooth~ 40
 We are reading the position parameter, which is available as a node because it was added in the editor UI. Then we scale it, smooth it (really just a lowpass filter), and use the value as the frequency of a sine wave which is sent to the audio source component.
 
 Unfortunately, Unity is terrible at dealing with textual assets. They cannot be created in the editor, and they must have the .txt extension. I recommend you copy-paste text assets that have already been imported and manually tell your editor to do the syntax highlighting.
-<br />![Screenshot of the Component](Screenshot.png)
+<br /><br />
+![Screenshot of the Component](Screenshot.png)
